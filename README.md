@@ -2,6 +2,8 @@
 
 Trabalho final da disciplina de **Visão Computacional (UFSC)**.
 
+**Autores:** Pedro Fontoura e Rafael Correa Bitencourt.
+
 O RepVision recebe um vídeo de exercício de musculação e devolve o número de
 **repetições**, o agrupamento delas em **séries** (com início e fim de cada
 uma) e um vídeo anotado com o esqueleto e o contador em tempo real.
