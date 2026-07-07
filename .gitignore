@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+saida/
+examples/saida/*_anotado.mp4
+.DS_Store

@@ -1,0 +1,7 @@
+mediapipe>=0.10.14
+opencv-python>=4.9
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+# opcional, apenas para repvision/train_tcn.py:
+# torch>=2.2
