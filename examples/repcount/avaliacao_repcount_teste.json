@@ -1,0 +1,232 @@
+{
+  "n_videos": 45,
+  "MAE": 0.238,
+  "OBO": 0.7111,
+  "por_video": [
+    {
+      "video": "stu10_1.mp4",
+      "gt": 2,
+      "pred": 2
+    },
+    {
+      "video": "stu10_24.mp4",
+      "gt": 14,
+      "pred": 15
+    },
+    {
+      "video": "stu10_43.mp4",
+      "gt": 17,
+      "pred": 17
+    },
+    {
+      "video": "stu10_6.mp4",
+      "gt": 4,
+      "pred": 4
+    },
+    {
+      "video": "stu12_31.mp4",
+      "gt": 32,
+      "pred": 33
+    },
+    {
+      "video": "stu12_34.mp4",
+      "gt": 26,
+      "pred": 31
+    },
+    {
+      "video": "stu13_32.mp4",
+      "gt": 10,
+      "pred": 11
+    },
+    {
+      "video": "stu13_35.mp4",
+      "gt": 33,
+      "pred": 34
+    },
+    {
+      "video": "stu13_38.mp4",
+      "gt": 34,
+      "pred": 34
+    },
+    {
+      "video": "stu1_30.mp4",
+      "gt": 2,
+      "pred": 2
+    },
+    {
+      "video": "stu1_59.mp4",
+      "gt": 18,
+      "pred": 7
+    },
+    {
+      "video": "stu2_25.mp4",
+      "gt": 58,
+      "pred": 58
+    },
+    {
+      "video": "stu2_37.mp4",
+      "gt": 17,
+      "pred": 17
+    },
+    {
+      "video": "stu2_55.mp4",
+      "gt": 30,
+      "pred": 30
+    },
+    {
+      "video": "stu2_65.mp4",
+      "gt": 8,
+      "pred": 8
+    },
+    {
+      "video": "stu3_18.mp4",
+      "gt": 16,
+      "pred": 17
+    },
+    {
+      "video": "stu3_28.mp4",
+      "gt": 30,
+      "pred": 31
+    },
+    {
+      "video": "stu3_5.mp4",
+      "gt": 33,
+      "pred": 7
+    },
+    {
+      "video": "stu3_57.mp4",
+      "gt": 19,
+      "pred": 18
+    },
+    {
+      "video": "stu4_19.mp4",
+      "gt": 32,
+      "pred": 31
+    },
+    {
+      "video": "stu4_29.mp4",
+      "gt": 5,
+      "pred": 6
+    },
+    {
+      "video": "stu4_5.mp4",
+      "gt": 51,
+      "pred": 6
+    },
+    {
+      "video": "stu4_68.mp4",
+      "gt": 5,
+      "pred": 3
+    },
+    {
+      "video": "stu5_16.mp4",
+      "gt": 10,
+      "pred": 11
+    },
+    {
+      "video": "stu5_27.mp4",
+      "gt": 14,
+      "pred": 11
+    },
+    {
+      "video": "stu5_55.mp4",
+      "gt": 4,
+      "pred": 4
+    },
+    {
+      "video": "stu6_13.mp4",
+      "gt": 9,
+      "pred": 8
+    },
+    {
+      "video": "stu6_23.mp4",
+      "gt": 34,
+      "pred": 35
+    },
+    {
+      "video": "stu6_30.mp4",
+      "gt": 2,
+      "pred": 2
+    },
+    {
+      "video": "stu6_63.mp4",
+      "gt": 17,
+      "pred": 17
+    },
+    {
+      "video": "stu7_10.mp4",
+      "gt": 8,
+      "pred": 3
+    },
+    {
+      "video": "stu7_30.mp4",
+      "gt": 15,
+      "pred": 6
+    },
+    {
+      "video": "stu7_45.mp4",
+      "gt": 3,
+      "pred": 0
+    },
+    {
+      "video": "stu8_10.mp4",
+      "gt": 11,
+      "pred": 2
+    },
+    {
+      "video": "stu8_23.mp4",
+      "gt": 3,
+      "pred": 2
+    },
+    {
+      "video": "stu8_34.mp4",
+      "gt": 5,
+      "pred": 5
+    },
+    {
+      "video": "stu8_45.mp4",
+      "gt": 11,
+      "pred": 4
+    },
+    {
+      "video": "stu8_57.mp4",
+      "gt": 7,
+      "pred": 6
+    },
+    {
+      "video": "stu8_71.mp4",
+      "gt": 4,
+      "pred": 4
+    },
+    {
+      "video": "stu9_29.mp4",
+      "gt": 43,
+      "pred": 44
+    },
+    {
+      "video": "stu9_36.mp4",
+      "gt": 11,
+      "pred": 12
+    },
+    {
+      "video": "stu9_48.mp4",
+      "gt": 27,
+      "pred": 2
+    },
+    {
+      "video": "stu9_64.mp4",
+      "gt": 14,
+      "pred": 15
+    },
+    {
+      "video": "test1454.mp4",
+      "gt": 6,
+      "pred": 7
+    },
+    {
+      "video": "test2315.mp4",
+      "gt": 3,
+      "pred": 7
+    }
+  ]
+}

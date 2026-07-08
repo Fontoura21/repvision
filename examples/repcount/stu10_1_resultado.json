@@ -1,0 +1,30 @@
+{
+  "video": "stu10_1.mp4",
+  "fps": 30.0,
+  "duracao_s": 29.97,
+  "periodo_dominante_s": 10.93,
+  "total_repeticoes": 2,
+  "total_series": 1,
+  "series": [
+    {
+      "serie": 1,
+      "repeticoes": 2,
+      "inicio_s": 9.83,
+      "fim_s": 26.03
+    }
+  ],
+  "repeticoes": [
+    {
+      "n": 1,
+      "inicio_s": 9.83,
+      "apice_s": 13.67,
+      "fim_s": 23.83
+    },
+    {
+      "n": 2,
+      "inicio_s": 23.83,
+      "apice_s": 24.5,
+      "fim_s": 26.03
+    }
+  ]
+}

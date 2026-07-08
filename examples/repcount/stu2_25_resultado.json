@@ -1,0 +1,366 @@
+{
+  "video": "stu2_25.mp4",
+  "fps": 25.0,
+  "duracao_s": 53.96,
+  "periodo_dominante_s": 0.92,
+  "total_repeticoes": 58,
+  "total_series": 1,
+  "series": [
+    {
+      "serie": 1,
+      "repeticoes": 58,
+      "inicio_s": 0.76,
+      "fim_s": 53.48
+    }
+  ],
+  "repeticoes": [
+    {
+      "n": 1,
+      "inicio_s": 0.76,
+      "apice_s": 1.32,
+      "fim_s": 1.72
+    },
+    {
+      "n": 2,
+      "inicio_s": 1.72,
+      "apice_s": 2.24,
+      "fim_s": 2.64
+    },
+    {
+      "n": 3,
+      "inicio_s": 2.64,
+      "apice_s": 3.12,
+      "fim_s": 3.56
+    },
+    {
+      "n": 4,
+      "inicio_s": 3.56,
+      "apice_s": 4.0,
+      "fim_s": 4.44
+    },
+    {
+      "n": 5,
+      "inicio_s": 4.44,
+      "apice_s": 4.92,
+      "fim_s": 5.36
+    },
+    {
+      "n": 6,
+      "inicio_s": 5.36,
+      "apice_s": 5.8,
+      "fim_s": 6.24
+    },
+    {
+      "n": 7,
+      "inicio_s": 6.24,
+      "apice_s": 6.72,
+      "fim_s": 7.16
+    },
+    {
+      "n": 8,
+      "inicio_s": 7.16,
+      "apice_s": 7.64,
+      "fim_s": 8.08
+    },
+    {
+      "n": 9,
+      "inicio_s": 8.08,
+      "apice_s": 8.52,
+      "fim_s": 8.96
+    },
+    {
+      "n": 10,
+      "inicio_s": 8.96,
+      "apice_s": 9.44,
+      "fim_s": 9.92
+    },
+    {
+      "n": 11,
+      "inicio_s": 9.92,
+      "apice_s": 10.32,
+      "fim_s": 10.76
+    },
+    {
+      "n": 12,
+      "inicio_s": 10.76,
+      "apice_s": 11.2,
+      "fim_s": 11.64
+    },
+    {
+      "n": 13,
+      "inicio_s": 11.64,
+      "apice_s": 12.08,
+      "fim_s": 12.52
+    },
+    {
+      "n": 14,
+      "inicio_s": 12.52,
+      "apice_s": 12.96,
+      "fim_s": 13.4
+    },
+    {
+      "n": 15,
+      "inicio_s": 13.4,
+      "apice_s": 13.88,
+      "fim_s": 14.32
+    },
+    {
+      "n": 16,
+      "inicio_s": 14.32,
+      "apice_s": 14.8,
+      "fim_s": 15.24
+    },
+    {
+      "n": 17,
+      "inicio_s": 15.24,
+      "apice_s": 15.72,
+      "fim_s": 16.16
+    },
+    {
+      "n": 18,
+      "inicio_s": 16.16,
+      "apice_s": 16.64,
+      "fim_s": 17.04
+    },
+    {
+      "n": 19,
+      "inicio_s": 17.04,
+      "apice_s": 17.52,
+      "fim_s": 18.0
+    },
+    {
+      "n": 20,
+      "inicio_s": 18.0,
+      "apice_s": 18.48,
+      "fim_s": 18.92
+    },
+    {
+      "n": 21,
+      "inicio_s": 18.92,
+      "apice_s": 19.36,
+      "fim_s": 19.8
+    },
+    {
+      "n": 22,
+      "inicio_s": 19.8,
+      "apice_s": 20.24,
+      "fim_s": 20.68
+    },
+    {
+      "n": 23,
+      "inicio_s": 20.68,
+      "apice_s": 21.16,
+      "fim_s": 21.56
+    },
+    {
+      "n": 24,
+      "inicio_s": 21.56,
+      "apice_s": 22.04,
+      "fim_s": 22.48
+    },
+    {
+      "n": 25,
+      "inicio_s": 22.48,
+      "apice_s": 22.92,
+      "fim_s": 23.36
+    },
+    {
+      "n": 26,
+      "inicio_s": 23.36,
+      "apice_s": 23.84,
+      "fim_s": 24.28
+    },
+    {
+      "n": 27,
+      "inicio_s": 24.28,
+      "apice_s": 24.76,
+      "fim_s": 25.2
+    },
+    {
+      "n": 28,
+      "inicio_s": 25.2,
+      "apice_s": 25.72,
+      "fim_s": 26.16
+    },
+    {
+      "n": 29,
+      "inicio_s": 26.16,
+      "apice_s": 26.64,
+      "fim_s": 27.08
+    },
+    {
+      "n": 30,
+      "inicio_s": 27.08,
+      "apice_s": 27.56,
+      "fim_s": 28.0
+    },
+    {
+      "n": 31,
+      "inicio_s": 28.0,
+      "apice_s": 28.44,
+      "fim_s": 28.88
+    },
+    {
+      "n": 32,
+      "inicio_s": 28.88,
+      "apice_s": 29.36,
+      "fim_s": 29.8
+    },
+    {
+      "n": 33,
+      "inicio_s": 29.8,
+      "apice_s": 30.24,
+      "fim_s": 30.68
+    },
+    {
+      "n": 34,
+      "inicio_s": 30.68,
+      "apice_s": 31.16,
+      "fim_s": 31.6
+    },
+    {
+      "n": 35,
+      "inicio_s": 31.6,
+      "apice_s": 32.08,
+      "fim_s": 32.52
+    },
+    {
+      "n": 36,
+      "inicio_s": 32.52,
+      "apice_s": 33.0,
+      "fim_s": 33.44
+    },
+    {
+      "n": 37,
+      "inicio_s": 33.44,
+      "apice_s": 33.92,
+      "fim_s": 34.4
+    },
+    {
+      "n": 38,
+      "inicio_s": 34.4,
+      "apice_s": 34.84,
+      "fim_s": 35.28
+    },
+    {
+      "n": 39,
+      "inicio_s": 35.28,
+      "apice_s": 35.76,
+      "fim_s": 36.2
+    },
+    {
+      "n": 40,
+      "inicio_s": 36.2,
+      "apice_s": 36.64,
+      "fim_s": 37.08
+    },
+    {
+      "n": 41,
+      "inicio_s": 37.08,
+      "apice_s": 37.56,
+      "fim_s": 38.0
+    },
+    {
+      "n": 42,
+      "inicio_s": 38.0,
+      "apice_s": 38.44,
+      "fim_s": 38.88
+    },
+    {
+      "n": 43,
+      "inicio_s": 38.88,
+      "apice_s": 39.36,
+      "fim_s": 39.8
+    },
+    {
+      "n": 44,
+      "inicio_s": 39.8,
+      "apice_s": 40.28,
+      "fim_s": 40.72
+    },
+    {
+      "n": 45,
+      "inicio_s": 40.72,
+      "apice_s": 41.16,
+      "fim_s": 41.6
+    },
+    {
+      "n": 46,
+      "inicio_s": 41.6,
+      "apice_s": 42.08,
+      "fim_s": 42.52
+    },
+    {
+      "n": 47,
+      "inicio_s": 42.52,
+      "apice_s": 42.96,
+      "fim_s": 43.4
+    },
+    {
+      "n": 48,
+      "inicio_s": 43.4,
+      "apice_s": 43.84,
+      "fim_s": 44.28
+    },
+    {
+      "n": 49,
+      "inicio_s": 44.28,
+      "apice_s": 44.76,
+      "fim_s": 45.24
+    },
+    {
+      "n": 50,
+      "inicio_s": 45.24,
+      "apice_s": 45.68,
+      "fim_s": 46.16
+    },
+    {
+      "n": 51,
+      "inicio_s": 46.16,
+      "apice_s": 46.64,
+      "fim_s": 47.08
+    },
+    {
+      "n": 52,
+      "inicio_s": 47.08,
+      "apice_s": 47.56,
+      "fim_s": 48.0
+    },
+    {
+      "n": 53,
+      "inicio_s": 48.0,
+      "apice_s": 48.48,
+      "fim_s": 48.92
+    },
+    {
+      "n": 54,
+      "inicio_s": 48.92,
+      "apice_s": 49.4,
+      "fim_s": 49.84
+    },
+    {
+      "n": 55,
+      "inicio_s": 49.84,
+      "apice_s": 50.28,
+      "fim_s": 50.72
+    },
+    {
+      "n": 56,
+      "inicio_s": 50.72,
+      "apice_s": 51.2,
+      "fim_s": 51.64
+    },
+    {
+      "n": 57,
+      "inicio_s": 51.64,
+      "apice_s": 52.12,
+      "fim_s": 52.56
+    },
+    {
+      "n": 58,
+      "inicio_s": 52.56,
+      "apice_s": 53.04,
+      "fim_s": 53.48
+    }
+  ]
+}

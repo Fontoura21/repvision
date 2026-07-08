@@ -4,3 +4,4 @@ __pycache__/
 saida/
 examples/saida/*_anotado.mp4
 .DS_Store
+examples/repcount/*_anotado.mp4

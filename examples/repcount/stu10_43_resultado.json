@@ -1,0 +1,126 @@
+{
+  "video": "stu10_43.mp4",
+  "fps": 29.97,
+  "duracao_s": 59.99,
+  "periodo_dominante_s": 3.1,
+  "total_repeticoes": 17,
+  "total_series": 2,
+  "series": [
+    {
+      "serie": 1,
+      "repeticoes": 7,
+      "inicio_s": 0.27,
+      "fim_s": 22.29
+    },
+    {
+      "serie": 2,
+      "repeticoes": 10,
+      "inicio_s": 25.73,
+      "fim_s": 58.36
+    }
+  ],
+  "repeticoes": [
+    {
+      "n": 1,
+      "inicio_s": 0.27,
+      "apice_s": 1.7,
+      "fim_s": 3.27
+    },
+    {
+      "n": 2,
+      "inicio_s": 3.27,
+      "apice_s": 5.17,
+      "fim_s": 6.17
+    },
+    {
+      "n": 3,
+      "inicio_s": 6.17,
+      "apice_s": 7.94,
+      "fim_s": 9.74
+    },
+    {
+      "n": 4,
+      "inicio_s": 9.74,
+      "apice_s": 11.44,
+      "fim_s": 12.38
+    },
+    {
+      "n": 5,
+      "inicio_s": 12.38,
+      "apice_s": 14.38,
+      "fim_s": 15.48
+    },
+    {
+      "n": 6,
+      "inicio_s": 15.48,
+      "apice_s": 17.62,
+      "fim_s": 18.62
+    },
+    {
+      "n": 7,
+      "inicio_s": 18.62,
+      "apice_s": 20.85,
+      "fim_s": 22.29
+    },
+    {
+      "n": 8,
+      "inicio_s": 25.73,
+      "apice_s": 28.83,
+      "fim_s": 30.8
+    },
+    {
+      "n": 9,
+      "inicio_s": 30.8,
+      "apice_s": 32.43,
+      "fim_s": 33.6
+    },
+    {
+      "n": 10,
+      "inicio_s": 33.6,
+      "apice_s": 35.74,
+      "fim_s": 36.94
+    },
+    {
+      "n": 11,
+      "inicio_s": 36.94,
+      "apice_s": 38.44,
+      "fim_s": 40.04
+    },
+    {
+      "n": 12,
+      "inicio_s": 40.04,
+      "apice_s": 41.71,
+      "fim_s": 42.84
+    },
+    {
+      "n": 13,
+      "inicio_s": 42.84,
+      "apice_s": 44.64,
+      "fim_s": 46.28
+    },
+    {
+      "n": 14,
+      "inicio_s": 46.28,
+      "apice_s": 48.21,
+      "fim_s": 49.15
+    },
+    {
+      "n": 15,
+      "inicio_s": 49.15,
+      "apice_s": 50.78,
+      "fim_s": 52.45
+    },
+    {
+      "n": 16,
+      "inicio_s": 52.45,
+      "apice_s": 54.39,
+      "fim_s": 55.32
+    },
+    {
+      "n": 17,
+      "inicio_s": 55.32,
+      "apice_s": 57.49,
+      "fim_s": 58.36
+    }
+  ]
+}

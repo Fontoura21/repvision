@@ -64,15 +64,27 @@ Saídas em `saida/`:
 
 ## Avaliação no RepCount
 
-O RepCount deve ser solicitado aos autores ([instruções](https://svip-lab.github.io/dataset/RepCount_dataset.html)).
-Com o dataset em disco:
+Avaliamos o RepVision no conjunto de **teste oficial do RepCount** com as
+métricas padrão do benchmark — **MAE** (erro absoluto médio normalizado) e
+**OBO** (acurácia off-by-one, |pred−gt| ≤ 1):
+
+| Métrica | RepVision (n=45, subconjunto do teste) |
+|---|---|
+| MAE | **0,238** |
+| OBO | **0,711** |
+
+Resultados por vídeo e a figura de dispersão em
+[`examples/repcount/`](examples/repcount/). É um subconjunto de 45 vídeos
+(≈30% do teste, 10 tipos de exercício), rodado em CPU — não o teste completo
+de 250. Para referência, o TransRAC (CVPR 2022) reporta MAE 0,4431 / OBO
+0,2913 no teste completo.
+
+Reproduzir (o RepCount processado está disponível na release do PoseRAC —
+vídeos + anotações oficiais):
 
 ```bash
-python -m repvision.evaluate --videos RepCount/video/test --csv RepCount/annotation/test.csv
+python -m repvision.evaluate --videos RepCount_pose/video/test --csv RepCount_pose/annotation/test.csv
 ```
-
-Reporta **MAE** (erro absoluto médio normalizado) e **OBO** (acurácia
-off-by-one), as métricas padrão do benchmark.
 
 ## Estrutura do código
 
