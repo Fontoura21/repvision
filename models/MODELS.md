@@ -2,7 +2,9 @@
 
 A rede neural utilizada pelo RepVision é o **BlazePose GHUM (MediaPipe Pose
 Landmarker)**, uma CNN pré-treinada pelo Google que estima 33 landmarks
-corporais (2D + 3D) por quadro.
+corporais (2D + 3D) por quadro. Nós **não treinamos** nenhuma rede: usamos o
+modelo pré-treinado como extrator de pose; a contagem de repetições é feita
+por processamento de sinal sobre esses landmarks.
 
 Os checkpoints estão incluídos neste diretório e também podem ser baixados
 dos links oficiais:
@@ -13,6 +15,3 @@ dos links oficiais:
 | `pose_landmarker_lite.task` | lite, float16 | https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task |
 
 Documentação: https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker
-
-O checkpoint opcional do TCN (`tcn_repcount.pt`) só existe após treinar com
-`python -m repvision.train_tcn` sobre o dataset RepCount (ver README).

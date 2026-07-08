@@ -8,7 +8,7 @@ O RepVision recebe um vídeo de exercício de musculação e devolve o número d
 **repetições**, o agrupamento delas em **séries** (com início e fim de cada
 uma) e um vídeo anotado com o esqueleto e o contador em tempo real.
 
-![exemplo de saída](examples/saida/sq_23913_sinal.png)
+![exemplo de saída: sinal de movimento e séries detectadas](examples/repcount/stu10_43_sinal.png)
 
 ## Links da entrega
 
@@ -33,11 +33,10 @@ vídeo ──► BlazePose (rede neural, 33 landmarks 3D/quadro)
 ```
 
 A rede neural do sistema é o **BlazePose GHUM (MediaPipe Pose Landmarker)**,
-uma CNN pré-treinada que estima a pose humana por quadro. A contagem em si é
-não-supervisionada e interpretável — funciona para qualquer exercício cíclico
-sem precisar treinar por classe de exercício. Uma extensão supervisionada
-(TCN treinada no RepCount, formulação de densidade como no TransRAC) está
-implementada em [`repvision/train_tcn.py`](repvision/train_tcn.py).
+uma CNN pré-treinada que estima a pose humana por quadro. A contagem é
+não-supervisionada: não treinamos nenhuma rede, apenas usamos a pose
+pré-treinada, o que permite contar qualquer exercício cíclico sem treinar por
+classe.
 
 ## Instalação
 
@@ -96,21 +95,12 @@ python -m repvision.evaluate --videos RepCount_pose/video/test --csv RepCount_po
 | `repvision/visualize.py` | vídeo anotado e gráfico do sinal |
 | `repvision/cli.py` | interface de linha de comando |
 | `repvision/evaluate.py` | protocolo de avaliação do RepCount (MAE/OBO) |
-| `repvision/train_tcn.py` | (opcional) TCN supervisionada — extensão treinável no RepCount |
 
-## Uso de IA Generativa (disclosure)
+## Uso de IA generativa
 
-Conforme exigido pela disciplina, declaramos que **este código foi
-desenvolvido com auxílio de IA generativa**:
-
-- **Ferramenta**: Claude Code (Anthropic), modelo Claude Fable 5.
-- **Prompts utilizados**: listados integralmente em
-  [`docs/PROMPTS.md`](docs/PROMPTS.md).
-- **Explicação detalhada do código gerado**: seção 6 do relatório
-  (`relatorio.pdf`) explica linha a linha as decisões de cada módulo —
-  normalização do esqueleto, por que PCA captura o eixo do movimento, como a
-  autocorrelação calibra a detecção de picos e como o limiar adaptativo separa
-  séries — demonstrando pleno entendimento da solução.
+Utilizamos o Claude Code (Anthropic) como apoio na escrita do código e da
+documentação. A concepção do método, as decisões de projeto e a validação dos
+resultados foram feitas pelos autores.
 
 ## Licença
 
