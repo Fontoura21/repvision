@@ -1,5 +1,3 @@
-"""Saídas visuais: vídeo anotado com esqueleto + contador e gráfico do sinal."""
-
 from __future__ import annotations
 
 from pathlib import Path
@@ -11,10 +9,9 @@ from .pose import PoseResult, SKELETON
 from .set_grouping import SetInfo
 from .signal_processing import RepSignal
 
-# Paleta Material Design v2 (Indigo 500 / Amber 500 / Teal 400)
-C_PRIMARY = (243, 81, 63)     # BGR de #3F51B5
-C_ACCENT = (7, 193, 255)      # BGR de #FFC107
-C_SKELETON = (136, 189, 38)   # BGR de #26BD88
+C_PRIMARY = (243, 81, 63)
+C_ACCENT = (7, 193, 255)
+C_SKELETON = (136, 189, 38)
 
 
 def _hud(frame: np.ndarray, rep_n: int, set_n: int, set_rep: int,
@@ -39,14 +36,12 @@ def _hud(frame: np.ndarray, rep_n: int, set_n: int, set_rep: int,
 def render_video(video_path: str | Path, out_path: str | Path,
                  pose: PoseResult, rep_signal: RepSignal,
                  sets: list[SetInfo]) -> None:
-    """Gera o vídeo anotado (esqueleto + contador de séries/repetições)."""
     cap = cv2.VideoCapture(str(video_path))
     w, h = pose.frame_size
     writer = cv2.VideoWriter(str(out_path),
                              cv2.VideoWriter_fourcc(*"mp4v"),
                              pose.fps, (w, h))
 
-    # para cada instante, quantas repetições/séries já se completaram
     rep_peaks = [r.t_peak for r in rep_signal.reps]
     set_of_rep = {}
     for s in sets:
@@ -60,7 +55,6 @@ def render_video(video_path: str | Path, out_path: str | Path,
             break
         t = pose.timestamps[idx]
 
-        # esqueleto
         pts = pose.landmarks[idx]
         vis = pose.visibility[idx]
         for a, b in SKELETON:
@@ -91,7 +85,6 @@ def render_video(video_path: str | Path, out_path: str | Path,
 
 def plot_signal(out_path: str | Path, rep_signal: RepSignal,
                 sets: list[SetInfo], title: str = "") -> None:
-    """Gráfico do sinal de movimento com picos e faixas das séries."""
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt

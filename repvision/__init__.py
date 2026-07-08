@@ -1,9 +1,3 @@
-"""RepVision — contagem de séries e repetições em exercícios de musculação.
-
-Pipeline: vídeo → pose (BlazePose/MediaPipe) → sinal 1D (PCA) →
-detecção de repetições (picos) → agrupamento em séries.
-"""
-
 __version__ = "1.0.0"
 
 from .pose import PoseExtractor, PoseResult

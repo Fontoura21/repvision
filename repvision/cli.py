@@ -1,14 +1,3 @@
-"""Interface de linha de comando do RepVision.
-
-Uso:
-    python -m repvision.cli video.mp4 -o saida/ [--model models/pose_landmarker_full.task]
-
-Gera em ``saida/``:
-    <video>_anotado.mp4  vídeo com esqueleto e contador de séries/repetições
-    <video>_sinal.png    sinal de movimento com picos e séries
-    <video>_resultado.json  contagens e limites temporais
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -41,7 +30,6 @@ def analyze(video: Path, out_dir: Path, model: Path,
                       min_gap_s=min_gap_s)
     if min_reps > 1:
         sets = filter_sets(sets, min_reps)
-        # mantém sinal/vídeo coerentes com as séries que sobraram
         rep_signal.reps = [r for s in sets for r in s.reps]
         for i, r in enumerate(rep_signal.reps, 1):
             r.index = i

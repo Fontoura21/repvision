@@ -1,11 +1,3 @@
-"""Extração de pose com a rede neural BlazePose (MediaPipe Pose Landmarker).
-
-A rede neural utilizada é o BlazePose GHUM (checkpoint oficial do Google,
-arquivos ``models/pose_landmarker_{lite,full}.task``). Ela devolve, por
-quadro, 33 landmarks 2D normalizados + 33 landmarks 3D em metros (world),
-com escore de visibilidade por articulação.
-"""
-
 from __future__ import annotations
 
 import dataclasses
@@ -16,7 +8,6 @@ import numpy as np
 
 N_LANDMARKS = 33
 
-# Conexões do esqueleto BlazePose (subconjunto estável, sem rosto detalhado)
 SKELETON = [
     (11, 12), (11, 13), (13, 15), (12, 14), (14, 16),
     (11, 23), (12, 24), (23, 24), (23, 25), (25, 27),
@@ -27,14 +18,12 @@ SKELETON = [
 
 @dataclasses.dataclass
 class PoseResult:
-    """Séries temporais de pose de um vídeo inteiro."""
-
-    landmarks: np.ndarray        # (T, 33, 2) coords normalizadas da imagem
-    world_landmarks: np.ndarray  # (T, 33, 3) coords 3D em metros (origem no quadril)
-    visibility: np.ndarray       # (T, 33) escore de visibilidade por articulação
-    timestamps: np.ndarray       # (T,) segundos
+    landmarks: np.ndarray
+    world_landmarks: np.ndarray
+    visibility: np.ndarray
+    timestamps: np.ndarray
     fps: float
-    frame_size: tuple[int, int]  # (largura, altura)
+    frame_size: tuple[int, int]
 
     @property
     def n_frames(self) -> int:
@@ -42,7 +31,6 @@ class PoseResult:
 
 
 class PoseExtractor:
-    """Envolve o MediaPipe Pose Landmarker em modo vídeo."""
 
     def __init__(self, model_path: str | Path, delegate_gpu: bool = False):
         import mediapipe as mp
@@ -64,7 +52,6 @@ class PoseExtractor:
 
     def extract(self, video_path: str | Path,
                 progress: bool = True) -> PoseResult:
-        """Roda a rede de pose em todos os quadros do vídeo."""
         cap = cv2.VideoCapture(str(video_path))
         if not cap.isOpened():
             raise FileNotFoundError(f"não consegui abrir o vídeo: {video_path}")
@@ -92,7 +79,6 @@ class PoseExtractor:
                 wlm.append([(p.x, p.y, p.z) for p in wpts])
                 vis.append([p.visibility for p in pts])
             else:
-                # pessoa não detectada: repete o último quadro válido
                 lm.append(lm[-1] if lm else [(np.nan, np.nan)] * N_LANDMARKS)
                 wlm.append(wlm[-1] if wlm else [(0.0, 0.0, 0.0)] * N_LANDMARKS)
                 vis.append([0.0] * N_LANDMARKS)

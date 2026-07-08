@@ -1,20 +1,3 @@
-"""Avaliação no protocolo do benchmark RepCount (MAE e OBO).
-
-O RepCount distribui anotações em CSV com uma linha por vídeo, a coluna
-``count`` com o total de repetições e pares de colunas L1,L2,... com os
-quadros de início/fim de cada ciclo. Este script roda o RepVision sobre os
-vídeos do conjunto de teste e reporta:
-
-    MAE = média( |pred - gt| / gt )
-    OBO = fração de vídeos com |pred - gt| <= 1  (Off-By-One accuracy)
-
-Uso:
-    python -m repvision.evaluate --videos RepCount/video/test \
-        --csv RepCount/annotation/test.csv [--limit N]
-
-O dataset deve ser solicitado em https://svip-lab.github.io/dataset/RepCount_dataset.html
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -26,7 +9,6 @@ from .cli import DEFAULT_MODEL, analyze
 
 
 def load_annotations(csv_path: Path) -> dict[str, int]:
-    """Mapa nome-do-vídeo → contagem anotada."""
     gt = {}
     with open(csv_path, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
@@ -35,7 +17,6 @@ def load_annotations(csv_path: Path) -> dict[str, int]:
             if not name:
                 continue
             if count is None or count == "":
-                # conta os pares L1/L2... preenchidos
                 marks = [v for k, v in row.items()
                          if k and k.upper().startswith("L") and v not in ("", None)]
                 count = len(marks) // 2
@@ -44,7 +25,8 @@ def load_annotations(csv_path: Path) -> dict[str, int]:
 
 
 def main(argv: list[str] | None = None) -> None:
-    p = argparse.ArgumentParser(description=__doc__)
+    p = argparse.ArgumentParser(
+        description="Avaliação MAE/OBO no conjunto de teste do RepCount.")
     p.add_argument("--videos", type=Path, required=True)
     p.add_argument("--csv", type=Path, required=True)
     p.add_argument("--model", type=Path, default=DEFAULT_MODEL)
